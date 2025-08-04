@@ -39,7 +39,7 @@ Then edit the `.env` file to add your API key, secret, and base URL.
 python backtester.py
 ```
 
-## 📄 File Descriptions
+## File Descriptions
 
 ### `data_collector.py`
 Fetches historical daily close prices for a given stock symbol using Alpaca’s REST API. It returns a DataFrame indexed by date.
