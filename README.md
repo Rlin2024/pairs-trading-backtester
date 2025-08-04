@@ -1,5 +1,3 @@
-
-````markdown
 # Pairs Trading Bot
 
 This project collects historical stock data from Alpaca and is designed to backtest pairs trading strategies
