@@ -56,16 +56,18 @@ Uses the Z-score signals to simulate a simple mean-reversion pairs trading strat
 
 Also includes plotting functionality for Z-scores and cumulative returns.
 
-- Modify variables to fit desired backtesting strategy
-        
-    ticker1='AAPL',
-    ticker2='MSFT',
-    lookback=20,
-    initial_capital=100000,
-    leverage=1,
-    entry_threshold=0.8,
-    exit_threshold=0.1
 
+You can modify the following variables to customize your backtest:
+
+```python
+ticker1 = 'AAPL'
+ticker2 = 'MSFT'
+lookback = 20
+initial_capital = 100000
+leverage = 1
+entry_threshold = 0.8
+exit_threshold = 0.1
+```
 
 ## Notes
 * This bot currently uses Alpaca’s paper trading API.
