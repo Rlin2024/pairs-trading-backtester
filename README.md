@@ -39,6 +39,34 @@ Then edit the `.env` file to add your API key, secret, and base URL.
 python backtester.py
 ```
 
+## 📄 File Descriptions
+
+### `data_collector.py`
+Fetches historical daily close prices for a given stock symbol using Alpaca’s REST API. It returns a DataFrame indexed by date.
+
+### `signal_generator.py`
+Takes two stock tickers, aligns their close prices, and computes the spread, rolling mean, standard deviation, and Z-score over a specified lookback window.
+
+### `backtest.py`
+Uses the Z-score signals to simulate a simple mean-reversion pairs trading strategy. It tracks capital over time and computes performance metrics like:
+- Total return
+- Sharpe ratio
+- Max drawdown
+- Trade count
+
+Also includes plotting functionality for Z-scores and cumulative returns.
+
+- Modify variables to fit desired backtesting strategy
+        
+    ticker1='AAPL',
+    ticker2='MSFT',
+    lookback=20,
+    initial_capital=100000,
+    leverage=1,
+    entry_threshold=0.8,
+    exit_threshold=0.1
+
+
 ## Notes
 * This bot currently uses Alpaca’s paper trading API.
 
