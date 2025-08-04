@@ -1,0 +1,21 @@
+# Python bytecode/cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+env/
+venv/
+
+# macOS system files
+.DS_Store
+
+# Editor/IDE settings
+.vscode/
+.idea/
+
+# Secrets (DO NOT COMMIT)
+.env
+alpaca_config.py
+
+# Logs
+*.log
