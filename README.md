@@ -43,7 +43,7 @@ python backtester.py
 
 ### `data_collector.py`
 Fetches historical daily close prices for a given stock symbol using Alpaca’s REST API. It returns a DataFrame indexed by date. 
- ➤ You can change the data collection range by modifying `start_date="2022-06-01"` and `end_date="2025-08-01"`
+You can change the data collection range by modifying `start_date="2022-06-01"` and `end_date="2025-08-01"`
 
 ### `signal_generator.py`
 Takes two stock tickers, aligns their close prices, and computes the spread, rolling mean, standard deviation, and Z-score over a specified lookback window.
